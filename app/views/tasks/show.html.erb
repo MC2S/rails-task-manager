@@ -1,2 +1,7 @@
-<h1>Tasks#show</h1>
-<p>Find me in app/views/tasks/show.html.erb</p>
+<h1><%= @task.name %></h1>
+  <ul>
+    <li>Done ?: <%= @task.done %></li>
+    <li>Created at: <%= @task.created_at.strftime("%m/%d/%Y") %></li>
+    <li>Last update: <%= @task.updated_at.strftime("%m/%d/%Y") %></li>
+    <li>Description: </li>
+  </ul>
