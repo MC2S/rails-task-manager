@@ -2,10 +2,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-th {
-  font-style: Arial;
-  font-size: 20px;
+.form-wrapper {
+  position: absolute;
+  left: 40%;
+  right: 50%;
+  top: 30%;
+
 }
 
-
+#description
+{
+  height:150px;
+}
 

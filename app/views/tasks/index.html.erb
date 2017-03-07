@@ -20,7 +20,15 @@
       </td>
       <td><%= task.name %></td>
       <td><%=link_to "Show details", task_path(task.id)%></td>
-      <td>To do</td>
+      <td style="text-align: center">
+      <%=link_to "Get rid of this shit", delete_tasks_path(task),
+      method: :delete,
+      data: { confirm: "Are you sure?" }%>
+      </td>
     </tr>
   <% end %>
 </table>
+
+<div style="margin-top: 50px">
+<%=link_to "Add a new task", tasks_new_path%>
+</div>

@@ -1,7 +1,13 @@
 <h1><%= @task.name %></h1>
   <ul>
-    <li>Done ?: <%= @task.done %></li>
+    <li>Done : <%= "#{@task.done}".capitalize %></li>
     <li>Created at: <%= @task.created_at.strftime("%m/%d/%Y") %></li>
     <li>Last update: <%= @task.updated_at.strftime("%m/%d/%Y") %></li>
-    <li>Description: </li>
+    <li>Description: <%= @task.description %></li>
   </ul>
+  <div style="margin-top: 50px">
+    <%=link_to "Edit task", edit_task_path(@task) %>
+  </div>
+ <div style="margin-top: 50px">
+    <%=link_to "Delete task"%>
+</div>
